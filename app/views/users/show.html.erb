@@ -1,0 +1,12 @@
+<table><h2>Recommended Movies for <%= @user.name %>:</h2>
+  <tr>
+    <th>Movie</th>
+    <th>Rating</th>
+  </tr>
+  <% @user.recommend_movies.each do |key, value| %>
+  <tr>
+    <td><%= key.name %></td>
+    <td><%= value.round(2) %></td>
+  </tr>
+  <% end %>
+</table>

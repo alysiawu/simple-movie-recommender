@@ -1,0 +1,5 @@
+<ul><h2>Select a user:</h2>
+  <% @users.each do |user| %>
+    <li><%= link_to user.name, user %></li>
+  <% end %>
+</ul>
