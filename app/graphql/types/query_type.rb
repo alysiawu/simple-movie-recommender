@@ -9,6 +9,19 @@ module Types
     def test_field
       "Hello World!"
     end
+
+    field :all_links, [LinkType], null: false
+
+    def all_links
+      Link.all
+    end
+
+    field :all_banners, [BannerType], null: false
+
+    def all_banners
+      Banner.all
+    end
+
   end
 end
 

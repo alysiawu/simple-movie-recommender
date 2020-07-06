@@ -6,5 +6,9 @@ module Types
     def test_field
       "Hello World"
     end
+
+    field :create_link, mutation: Mutations::CreateLink
+
+    field :create_banner, mutation: Mutations::CreateBanner
   end
 end
